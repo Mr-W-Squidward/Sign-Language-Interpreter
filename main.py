@@ -8,9 +8,10 @@ mp_hands = mp.solutions.hands
 mp_task = mp.tasks
 
 # Define Gesture Recognizer
-model_path = 'C:\\Users\\NAZRU\\CS projects\\hackathon\\gesture_recognizer.task'
+model_path = r'gesture_recognizer.task'
 
 BaseOptions = mp_task.BaseOptions
+ClassifierOptions = mp_task.components.processors.ClassifierOptions
 GestureRecognizer = mp_task.vision.GestureRecognizer
 GestureRecognizerOptions = mp_task.vision.GestureRecognizerOptions
 VisionRunningMode = mp_task.vision.RunningMode
@@ -70,11 +71,13 @@ def draw_landmarks_on_image(frame, detection_result):
                 FONT_SIZE, HANDEDNESS_TEXT_COLOR, FONT_THICKNESS, cv2.LINE_AA)
 
 options = GestureRecognizerOptions(
+   
     base_options=BaseOptions(model_asset_path=model_path),
     running_mode=VisionRunningMode.VIDEO,
     num_hands = 4,
-    min_tracking_confidence = 0.5,
-    min_hand_presence_confidence = 0.4
+    min_tracking_confidence = 0.3,
+    min_hand_presence_confidence = 0.7,
+    custom_gesture_classifier_options=ClassifierOptions(score_threshold=0.65)
 )
 with GestureRecognizer.create_from_options(options) as recognizer:
     while True:
