@@ -1,0 +1,93 @@
+body {
+  background-image: url('../public/cosmos.jpg'); 
+  background-size: cover;
+  background-attachment: fixed; 
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(120, 10, 160, 0.15);
+  animation: fadeInUp 2s ease-out; 
+}
+
+.header {
+  background-color: #ca1616;
+  color: rgba(204, 92, 0, 0.048);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #800cce; 
+  border-bottom: 1px solid #800cce;
+}
+
+.info-container {
+  border-top: 1px solid #800cce; 
+  border-bottom: 1px solid #800cce;
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: fadeInUp 2s ease-out;
+}
+
+.info {
+  text-align: center;
+  color: #f0d8d8;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 70px;
+  margin-bottom: 10px; /* Adjust the margin between lines */
+}
+
+.colorfulText {
+  color: #7e12fa;
+  font-weight: 400;
+}
+
+.section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(53, 26, 151, 0.20);
+  animation: fadeInUp 2s ease-out;
+  border-top: 1px solid #800cce; 
+  border-bottom: 1px solid #800cce;
+}
+
+.header {
+  background-color: #ca1616;
+  color: rgba(204, 92, 0, 0.048);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.site-name {
+  color: #7e12fa;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.section {
+  text-align: center;
+}
+
+.section:last-child {
+  margin-bottom: 0; /* Remove margin bottom for the last section */
+}

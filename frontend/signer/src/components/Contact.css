@@ -1,0 +1,33 @@
+.contact-container {
+  padding: 20px;
+}
+
+.creators {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.creator {
+  width: 45%;
+}
+
+.creator img {
+  width: 100%;
+  height: 600px; 
+  object-fit: cover; 
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+.creator-details {
+  margin-top: 10px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
